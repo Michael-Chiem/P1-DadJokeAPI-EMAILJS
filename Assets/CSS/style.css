@@ -1,0 +1,308 @@
+* {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+  }
+  
+  html {
+    background-color: #918FC0;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: "octin-college", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    background-color: #918FC0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .box {
+    background-color: transparent;
+  }
+  
+  img {
+    width: 25%;
+  }
+
+  h2 {
+    display: inline-block;
+    font-size: 25px;
+    color: #ffffff;
+  }
+
+  #fav-h2 {
+    margin-bottom: 24px;
+  }
+
+
+
+
+  p {
+    font-family: "Lato";
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+  }
+
+
+  .content-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 5%;
+    padding-top: 5%;
+    padding-bottom: 2%;
+}
+
+  #joke-list {
+    width: 40rem;
+    list-style: none;
+    font-size: 1.5rem;
+  }
+
+  #joke-li {
+    background-color: rgb(34, 194, 186);
+    border-radius: 0.5rem;
+    margin-top: 0.75rem;
+    padding: 0.5rem; 
+    color: white;
+    font-size: 20px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    margin-bottom: 10px;
+    font-family: "Lato";
+  }
+
+  #refresh-btn-li {
+    width: 40rem;
+  }
+
+  .email-btn, #email-btn-0,  #fav-btn-0, #email-btn-1, #fav-btn-1, #email-btn-2,
+  #fav-btn-2, #email-btn-3, #fav-btn-3, #email-btn-4, #fav-btn-4, #email-btn-5,
+  #fav-btn-5,  #email-btn-6, #fav-btn-6, #email-btn-7, #fav-btn-7, #email-btn-8,
+  #fav-btn-8, #email-btn-9, #fav-btn-9, #email-btn-10, #fav-btn-10{
+    background-color: #F15B61;
+    padding: 20px;
+    font-family: "octin-college", sans-serif;
+    color: white;
+    border-radius: 5px;
+    font-size: 20px;
+    border: none;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    cursor: pointer;
+  }
+
+  #remove-btn {
+    display: block;
+    background-color: #F15B61;
+    padding: 20px;
+    font-family: "octin-college", sans-serif;
+    color: white;
+    border-radius: 5px;
+    font-size: 20px;
+    border: none;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    cursor: pointer;
+  }
+
+  #email-btn-0:hover, #fav-btn-0:hover, #email-btn-1:hover, #fav-btn-1:hover, #email-btn-2:hover, #fav-btn-2:hover, #email-btn-3:hover, #fav-btn-3:hover, #email-btn-4:hover, #fav-btn-4:hover, #email-btn-5:hover, #fav-btn-5:hover,#email-btn-6:hover, #fav-btn-6:hover, #email-btn-7:hover, #fav-btn-7:hover, #email-btn-8:hover, #fav-btn-8:hover, #email-btn-9:hover, #fav-btn-9:hover, #email-btn-10:hover, #fav-btn-10:hover {
+    background-color: #EF4854;
+    padding: 20px;
+    font-family: "octin-college", sans-serif;
+    color: white;
+    border-radius: 5px;
+    font-size: 20px;
+    border: none;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    cursor: pointer;
+  }
+
+  #remove-btn:hover {
+    background-color: #EF4854;
+    padding: 20px;
+    font-family: "octin-college", sans-serif;
+    color: white;
+    border-radius: 5px;
+    font-size: 20px;
+    border: none;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    cursor: pointer;
+  }
+
+  #refresh-1 {
+    width: 424px;
+    background-color: #F15B61;
+    padding: 10px;
+    margin-left: 10px;
+    font-family: "octin-college", sans-serif;
+    color: white;
+    border-radius: 5px;
+    font-size: 25px;
+    border: none;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    cursor: pointer;
+  }
+
+
+
+  #refresh-1:hover {
+    background-color: #EF4854;
+    padding: 10px;
+    font-family: "octin-college", sans-serif;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    cursor: pointer;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .rating {
+    width: 180px;
+    padding: 10px;
+  }
+  
+  .rating__star {
+    cursor: pointer;
+    color: #FFE600;
+  }
+
+.rating__star:hover {
+  cursor: pointer;
+  color: #F2D500;
+}
+  
+  #fav-container {
+    width: 576px;
+  } 
+
+  .dad-jokes{
+      background-color: #918FC0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  
+  .container {
+    color: #53526D;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  
+  .field h2 {
+    text-align: center;
+    padding-bottom: 20px;
+    color: #53526D;
+  }
+  
+  
+  form {
+    border: 2px solid #53526D;
+    background-color: white;
+    border-radius: 20px;
+    width: 90%;
+    max-width: 600px;
+    max-height: 650px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: auto;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    position: relative;
+    margin-top: 50px;
+  }
+  
+  label {
+      display: block;
+      margin-top: 20px;
+  }
+  
+  input[type="email"],
+  input[type="recipient"],
+  input[type="sender"],
+  input[type="time"],
+  .sendEmail {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+      font-family: "Avenir-Next";
+  }
+  
+  .input.input.is-success {
+  border-color: #53526D;
+  }
+
+
+.control.has-icons-left .icon,
+.control.has-icons-right .icon {
+  color: #dbdbdb;
+  height: 2.5em;
+  pointer-events: none;
+  position: absolute;
+  top: auto;
+  width: 2.5em;
+  z-index: 4;
+}
+  
+  .sendEmail {
+      background-color: #53526D;
+      color: #fff;
+      cursor: pointer;
+      font-family: "octin-college", sans-serif;
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      border: none;
+      width: 260px;
+      margin-top: 50px;
+  }
+  
+  #button{
+    text-align: center;
+  }
+
+  button:hover {
+      background-color: #EF4854;
+    }
+  
+  input:invalid {
+      border-color: #ff0000;
+  }
+  
+  
+  #time{
+    border-radius: 5px;
+    padding: 10px;
+    border-color: #53526D;
+  }
+  
+  
+/* See if you can implement overlay */
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.6);
+      backdrop-filter: blur(3px);
+      z-index: 5;
+    }
+
+    footer {
+      margin: 30px;
+      font-size: 30px;
+    
+    }
+
+    footer a {
+      color: white;
+    }
+
+    
